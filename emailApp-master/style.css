@@ -1,0 +1,124 @@
+h6{
+    margin: 0 !important;
+}
+
+ul{
+    list-style-type: none;
+}
+.colorGray{
+    color: gray;
+}
+
+.sidebar{
+    width: 25%;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid darkgray;
+}
+
+.userInfo{
+    width: 75%;
+}
+
+.menuEmail{
+    list-style-type: none;
+}
+
+.inboxBtn{
+    border: 0px !important;
+    outline: 0 !important;
+    box-shadow: none;
+}
+.inboxBtn:focus{
+    border: none !important;
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+.menuEmail{
+    background-color: white;
+}
+.menuEmail:hover{
+    background-color: rgb(206, 187, 187);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: red !important;
+    box-shadow: none;
+}
+
+.btnNewEmail{
+    background-color: rgb(124, 113, 113);
+    color: white;
+}
+
+.btnNewEmail:hover{
+    background-color: rgb(59, 54, 54);
+}
+
+.modal-header{
+    background-color: red;
+    color: white;
+}
+
+.userImg{
+    border-radius: 4px;
+}
+
+
+.userCard{
+    border-bottom: 1px solid gray;
+    animation: cardAnimate .5s;
+}
+.userCard:hover{
+    background-color: rgb(232, 210, 210);
+}
+
+.accordion-button:not(.collapsed) {
+    transform: translateX(0px);
+    background-color: red;
+}
+
+.uesrDescription{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.userName{
+    color: gray;
+}
+
+.btnBackFor{
+    background-color: rgb(237, 234, 234) !important;
+    color: black;
+}
+
+.userImage{
+    animation: imageAnimate .5s;
+}
+
+.btnNew{
+    padding: 10px 17px;
+    background-color: red;
+    color: white;
+    border: 0;
+}
+
+
+@keyframes cardAnimate {
+    from {transform: translateX(-410px);}
+    to {transform: translateX(0px);}
+}
+@keyframes imageAnimate {
+    from {transform: translateY(-410px);}
+    to {transform: translateY(0px);}
+}
+
+
+@media screen and (max-width: 992px) {
+    .userInfo{
+        width: 100%;
+    }
+}
